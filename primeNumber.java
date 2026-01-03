@@ -15,6 +15,24 @@ public class primeNumber {
         if (num <= 1) {
             return false;
         }
+        //o(n)- to iterate till number less than the input number
+        for (int i = 2; i <= num - 1; i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        //return true;
+
+        //to iterate till n/2 wherein number greater than half of the number cannot divide the number, for eg if number is 10, divisor greater than 5 i.e 6 cannot divide the number 10.
+        // - o(n)
+        for (int div = 2; div < div / 2; div++) {
+            if (num % div == 0) {
+                return false;
+            }
+        }
+        // return true;
+
+        //Squareroot method- o(sqrt n) 
         int firstNum = 2;
         while (firstNum * firstNum <= num) {
             if (num % firstNum == 0) {
