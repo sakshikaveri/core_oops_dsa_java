@@ -27,4 +27,14 @@ public class Arrays {
         }
 
     }
+
+    public static char[] toString(int[][] arr2d) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'toString'");
+    }
+
+    public static char[] toString(int[] is) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'toString'");
+    }
 }
