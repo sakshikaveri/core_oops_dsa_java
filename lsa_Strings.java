@@ -1,0 +1,26 @@
+
+import java.util.Arrays;
+
+public class lsa_Strings {
+
+    public static void main(String[] args) {
+        String name = "Sakshi";
+        char target = 'j';
+        System.out.println(Arrays.toString(name.toCharArray()));
+        boolean result = searchElement(name, target);
+        System.err.println(result);
+
+    }
+
+    private static boolean searchElement(String name, char target) {
+        if (name.length() == 0) {
+            return false;
+        }
+        for (int i = 0; i < name.length(); i++) {
+            if (target == name.charAt(i)) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
