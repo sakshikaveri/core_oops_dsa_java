@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Stringbuffer {
     public static void main(String[] args) {
 
@@ -23,5 +25,21 @@ public class Stringbuffer {
         String str = sb.toString();
         System.out.println(str);
 
+        // Generating random string
+        int n = 25;
+        String result = generateString(n);
+        System.out.println(result);
+    }
+
+    static String generateString(int size) {
+        StringBuffer sb = new StringBuffer(size);
+        Random random = new Random();
+
+        for (int i = 0; i < size; i++) {
+            // System.out.println(random.nextFloat()*26);
+            int randomChar = 97 + (int) (random.nextFloat() * 26);
+            sb.append((char) randomChar);
+        }
+        return sb.toString();
     }
 }
