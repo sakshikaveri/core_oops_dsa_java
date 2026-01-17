@@ -13,8 +13,12 @@ public class Stringbuffer {
         System.out.println(sb1.capacity());
 
         // constructor 3
-        StringBuffer sb2 = new StringBuffer("HelloWorld");
+        StringBuffer sb2 = new StringBuffer("Hello World Namaste Hi");
         System.out.println(sb2.capacity());
+
+        // removing whitespaces
+        String sb3 = new String("Hello Hi Namaste");
+        System.out.println(sb3.replaceAll("\\s", ""));
 
         // METHODS
         // sb.insert(6," is ");
@@ -29,6 +33,7 @@ public class Stringbuffer {
         int n = 25;
         String result = generateString(n);
         System.out.println(result);
+
     }
 
     static String generateString(int size) {
