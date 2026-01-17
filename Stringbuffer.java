@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 public class Stringbuffer {
@@ -19,6 +20,10 @@ public class Stringbuffer {
         // removing whitespaces
         String sb3 = new String("Hello Hi Namaste");
         System.out.println(sb3.replaceAll("\\s", ""));
+
+        // split
+        String sb4 = "Sakshi Saurabh Vadiraj Vinuta";
+        System.out.println(Arrays.toString(sb4.split(" ")));
 
         // METHODS
         // sb.insert(6," is ");
