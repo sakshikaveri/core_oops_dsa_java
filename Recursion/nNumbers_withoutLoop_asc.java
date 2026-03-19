@@ -8,7 +8,8 @@ public class nNumbers_withoutLoop_asc {
 
     static void printASC(int n) {
         if (n < 1) return;
-        printASC(n - 1);
         System.out.print(n + " ");
+        printASC(n - 1);
+
     }
 }
