@@ -5,7 +5,7 @@ package Patterns;
  **/
 public class MaximumSubarray {
     public static void main(String[] args) {
-        int[] nums = {5, 4, 1, 7, 8};
+        int[] nums =  {-2,1,-3,4,-1,2,1,-5,4};
         int result = maxsubarray(nums);
         System.out.println(result);
     }
